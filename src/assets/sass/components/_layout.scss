@@ -1,0 +1,16 @@
+#layout{
+   
+    min-height: calc(100vh - 70px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+}
+.page-body-wrapper{
+    padding-top: 70px;
+}

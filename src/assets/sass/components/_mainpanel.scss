@@ -1,0 +1,81 @@
+.main-panel {
+    transition: width $action-transition-duration $action-transition-timing-function, margin $action-transition-duration $action-transition-timing-function;
+    width: calc(100% - #{$sidebar-width-lg});
+    // min-height: calc(100vh - #{$navbar-height});
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+        flex: 1;
+    //   margin-left: 259px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+      width: 100%;
+    }
+
+
+    .content-wrapper{
+        background: #f2edf3;
+        padding: 2.75rem 2.25rem;
+        width: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+
+        .page-header{
+            margin: 0 0 1.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .page-title {
+                color: #343a40;
+                font-size: 1.125rem;
+                margin-bottom: 0;
+                span{
+                    background: linear-gradient(to right, #da8cff, #9a55ff) !important;
+                }
+                
+                .page-title-icon{
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 4px;
+                    text-align: center;
+                    -webkit-box-shadow: 0px 3px 8.3px 0.7px #a35dff59;
+                    box-shadow: 0px 3px 8.3px 0.7px #a35dff59;
+                    i{
+                        font-size: .9375rem;
+                        line-height: 36px;
+                    }
+                }
+            }
+
+            .breadcrumb{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 0.56rem 1.13rem;
+                margin-bottom: 1rem;
+                font-size: 0.875rem;
+                list-style: none;
+                background-color: transparent;
+                border-radius: 0.25rem;
+
+                i{
+                    color: #b66dff !important;
+                    font-size: 1rem;
+                }
+            }
+            .active{
+                color: #343a40cc;
+            }
+
+        }
+
+    }
+
+
+
+
+  }

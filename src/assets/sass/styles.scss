@@ -1,0 +1,31 @@
+/* === Import Bootstrap functions and variables === */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+@import 'basic/variables';
+
+@import 'basic/basic';  
+@import 'basic/list';
+
+@import 'mixin/animation';
+@import 'mixin/bagesMix';
+
+@import 'components/badges';
+@import 'components/preview';
+
+
+
+@import 'mixin/animation';
+@import 'mixin/cardsM';
+
+@import 'components/header';
+@import 'components/layout';
+@import 'components/sidebarmenu';
+@import 'components/mainpanel';
+@import 'components/card';
+@import 'components/table';
+@import 'components/forms';
+
+
+
+
